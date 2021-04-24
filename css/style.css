@@ -55,6 +55,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-55%, -55%);
+  text-align: center;
 }
 
 .heading-primary {
@@ -64,6 +65,7 @@ body {
   -webkit-backface-visibility: hidden;
 
   backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -167,6 +169,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
 }
 
 .btn-white {
