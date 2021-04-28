@@ -120,7 +120,7 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-.heading--terciary {
+.heading--tertiary {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
@@ -208,13 +208,20 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
   .card__side {
-    background-color: orangered;
     height: 50rem;
-    transition: all 0.8s; }
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
     .card__side--front {
-      background-color: orangered; }
+      background-color: #fff; }
     .card__side--back {
       background-color: green;
       transform: rotateY(180deg); }
