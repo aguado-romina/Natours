@@ -5,6 +5,9 @@
   height: 50rem;
 
   &__side {
+    color: $color-white;
+    font-size: 2rem;
+
     height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -13,14 +16,23 @@
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--front {
       background-color: $color-white;
     }
 
     &--back {
-      background-color: green;
       transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
     }
   }
 
