@@ -31,3 +31,13 @@ body {
     padding: 0;
   }
 }
+
+::-moz-selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
